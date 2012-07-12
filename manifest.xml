@@ -1,0 +1,22 @@
+<package>
+  <description brief="view3d">
+
+     view3d
+
+  </description>
+  <author>John Schulman</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/view3d</url>
+  <depend package="image_view"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-Wl,-rpath,${prefix}/lib -L${prefix}/lib -limage_view" />
+    <nodelet plugin="${prefix}/nodelet_plugins.xml" />
+  </export>
+
+
+
+</package>
+
+
